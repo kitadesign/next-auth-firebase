@@ -19,6 +19,7 @@ export default function RootLayout({ children, }: {
             <nav>
               <ul>
                 <li><Link href="/">Top</Link></li>
+                <li><Link href="/dashboard">Dashboard</Link></li>
                 <li><Link href="/feed">Feed</Link></li>
               </ul>
             </nav>
