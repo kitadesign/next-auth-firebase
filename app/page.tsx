@@ -14,7 +14,7 @@ export default function Page() {
         <button type="button" onClick={() => router.push('/next')}>button</button>
       </div> */}
       <div>
-        <Link href="/next">link</Link>
+        <Link href="/feed">feed</Link>
       </div>
     </div>
   )
