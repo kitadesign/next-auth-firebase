@@ -21,6 +21,7 @@ export default function RootLayout({ children, }: {
                 <li><Link href="/">Top</Link></li>
                 <li><Link href="/dashboard">Dashboard</Link></li>
                 <li><Link href="/feed">Feed</Link></li>
+                <li><Link href="/post">Post</Link></li>
               </ul>
             </nav>
             <article>
