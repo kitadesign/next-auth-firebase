@@ -1,3 +1,91 @@
 {
-  "extends": "next/core-web-vitals"
+  "extends": [
+    "next",
+    "next/core-web-vitals",
+    "eslint:recommended",
+    "plugin:react-hooks/recommended",
+    "plugin:jest/recommended",
+    "plugin:jest/style"
+  ],
+  "parserOptions": {
+    "ecmaVersion": 2022
+  },
+  "plugins": [
+    "jest",
+    "@typescript-eslint"
+  ],
+  "env": {
+    "jest/globals": true
+  },
+  "rules": {
+    "quotes": ["error", "single"],
+    "no-var": ["error"],
+    "no-multi-spaces": ["error"],
+    "indent": ["error", 2],
+    "semi": ["error", "never"],
+    "space-in-parens": ["error", "never"],
+    "array-bracket-spacing": ["error", "never"],
+    "no-multiple-empty-lines": ["error", { "max": 1 }],
+    "react/jsx-curly-spacing": ["error", "never"],
+    "react/self-closing-comp": [
+      "error",
+      {
+        "component": true,
+        "html": true
+      }
+    ],
+    "react/jsx-boolean-value": "error",
+    "import/order": ["error", {
+      "groups" : [
+        "builtin", "external", "internal", "parent", "sibling", "index", "object", "type"
+      ],
+      "newlines-between": "always"
+    }],
+    "no-console": ["error", { "allow": ["error"] }],
+    "keyword-spacing": [
+      "error",
+      {
+        "before": true,
+        "after": true,
+        "overrides": { "as": { "before": true } }
+      }
+    ],
+    "arrow-spacing": [
+      "error", {
+        "before": true,
+        "after": true
+      }
+    ],
+    "comma-spacing": [
+      "error",
+      {
+        "before": false,
+        "after": true
+      }
+    ],
+    "key-spacing": [
+      "error",
+      {
+        "beforeColon": false,
+        "afterColon": true,
+        "mode": "strict"
+      }
+    ],
+    "computed-property-spacing": ["error", "never"],
+    "object-curly-spacing": ["error", "always"],
+    "object-curly-newline": [ "error", {
+      "ObjectExpression": {
+        "multiline": true,
+        "minProperties": 4
+      },
+      "ObjectPattern": {
+        "multiline": true,
+        "minProperties": 4
+      },
+      "ImportDeclaration": "never",
+      "ExportDeclaration": "never"
+    }],
+    "no-unused-vars": "off",
+    "@typescript-eslint/no-unused-vars": ["error"]
+  }
 }
